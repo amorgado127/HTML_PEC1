@@ -2,7 +2,7 @@
     "main": "src/index.html",
     "scripts": {
         "parcel:dev": "parcel ./src/index.html ./src/categoria.html ./src/detalle.html",
-        "parcel:build": "parcel build ./src/index.html ./src/categoria.html ./src/detalle.html",
+        "parcel:build": "parcel build ./src/index.html ./src/categoria.html ./src/detalle.html ./src/img/**/*",
         "dev": "npm-run-all clean parcel:dev",
         "build": "npm-run-all clean parcel:build",
         "clean": "rimraf dist .cache .cache-loader"
@@ -19,15 +19,6 @@
     "dependencies": {
         "autoprefixer": "^9.8.6",
         "parcel-bundler": "^1.12.4"
-    },
-    "customDistStructure": {
-        "config": {
-            "script": "js",
-            "css": "css",
-            "img": [
-                ".jpg",
-                ".png"
-            ]
-        }
     }
+
 }
