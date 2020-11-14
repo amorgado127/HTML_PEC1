@@ -18,13 +18,13 @@ const data = {
       id: 2,
       nombre: "Clásicos",
       imagen: "./img/ciencia_ficcion_large.png",
-      enlace: "./categoria.html?categoria=2",
+      enlace: "#",
     },
     {
       id: 3,
       nombre: "Poesía",
       imagen: "./img/fantasia_large.png",
-      enlace: "./categoria.html?categoria=3",
+      enlace: "#",
     },
   ],
   libros: [

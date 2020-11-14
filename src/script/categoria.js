@@ -21,14 +21,14 @@ const data = {
       nombre: "Clásicos",
       imagen: "./img/ciencia_ficcion_large.png",
       imagen_th: "./img/ciencia_ficcion_th.png",
-      enlace: "./categoria.html?categoria=2",
+      enlace: "#",
     },
     {
       id: 3,
       nombre: "Poesía",
       imagen: "./img/fantasia_large.png",
       imagen_th: "./img/fantasia_th.png",
-      enlace: "./categoria.html?categoria=3",
+      enlace: "#",
     },
   ],
   libros: [
