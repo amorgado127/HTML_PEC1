@@ -38,7 +38,7 @@ window.onload = function () {
         autor: "Ken Follet",
         imagenPequeña: "./img/los_pilares_de_la_tierra_th.jpg",
         imagenGrande: "./img/los_pilares_de_la_tierra_large.jpg",
-        resumen: "",
+        resumen: "Los pilares de la Tierra es una novela histórica del autor británico Ken Follett, ambientada en Inglaterra en la Edad Media, en concreto en el siglo XII, durante un periodo de guerra civil conocido como la anarquía inglesa, entre el hundimiento del White Ship y el asesinato del arzobispo Thomas Becket. También se recrea un viaje de peregrinación a Santiago de Compostela a través de Francia y España.|La novela describe el desarrollo de la arquitectura gótica a partir de su precursora, la arquitectura románica, y las vicisitudes del priorato de Kingsbridge, en contraste con el telón de fondo de acontecimientos históricos que se estaban produciendo en ese momento. A pesar de que Kingsbridge es el nombre de una localidad inglesa real, el Kingsbridge al que se hace referencia en la novela es, en realidad, un emplazamiento ficticio representativo del típico pueblo inglés en el que se establecían mercados en la época. ",
         resumen_corto:
           "El amor y la muerte se entrecruzan vibrantemente en este magistral tapiz cuyo centro es la construcción de una catedral gótica. La historia se inicia con el ahorcamiento público de un inocente y finaliza con la humillación de un rey.",
         video: "https://www.youtube.com/embed/nZerMgYOwlA",
@@ -90,8 +90,8 @@ window.onload = function () {
         autor: "Mika Waltari",
         imagenPequeña: "./img/sinuhe_el_egipcio_th.jpg",
         imagenGrande: "./img/sinuhe_el_egipcio_large.jpg",
-        resumen: `En el ocaso de su vida, el protagonista de este relato confiesa: "porque yo, Sinuhé, soy un hombre y, como tal, he vivido en todos los que han existido antes que yo y viviré en todos los que existan después de mí. Viviré en las risas y en las lágrimas de los hombres, en sus pesares y temores, en su bondad y en su maldad, en su debilidad y en su fuerza". Sinuhé el egipcio nos introduce en el fascinante y lejano mundo del Egipto de los faraones, los reinos sirios, la Babilonia decadente, la Creta anterior a la Hélade..., es decir, en todo el mundo conocido catorce siglos antes de Jesucristo. Sobre este mapa, Sinuhé dibuja la línea errante de sus viajes; y aunque la vida no sea generosa con él, en su corazón vive inextinguible la confianza en la bondad de los hombres. `,
-        resumen_corto: "",
+        resumen: `Sinuhé es un huérfano encontrado en un barco de cañas en el Nilo por un médico de los pobres. Creciendo, estudia y llega a covertirse en médico de la corte.|En el ocaso de su vida, el protagonista de este relato confiesa: "porque yo, Sinuhé, soy un hombre y, como tal, he vivido en todos los que han existido antes que yo y viviré en todos los que existan después de mí. Viviré en las risas y en las lágrimas de los hombres, en sus pesares y temores, en su bondad y en su maldad, en su debilidad y en su fuerza". Sinuhé el egipcio nos introduce en el fascinante y lejano mundo del Egipto de los faraones, los reinos sirios, la Babilonia decadente, la Creta anterior a la Hélade..., es decir, en todo el mundo conocido catorce siglos antes de Jesucristo. Sobre este mapa, Sinuhé dibuja la línea errante de sus viajes; y aunque la vida no sea generosa con él, en su corazón vive inextinguible la confianza en la bondad de los hombres. `,
+        resumen_corto: "Sinuhé es un huérfano encontrado en un barco de cañas en el Nilo por un médico de los pobres. Creciendo, estudia y llega a covertirse en médico de la corte.",
         video: "",
       },
       {
