@@ -36,7 +36,7 @@ const data = {
       titulo: "Los pilares de la Tierra",
       autor: "Ken Follet",
       imagenPequeña: "./img/los_pilares_de_la_tierra_th.jpg",
-      imagenGrande: "./img/los_pilares_de_la_tierra_large.th",
+      imagenGrande: "./img/los_pilares_de_la_tierra_large.jpg",
       resumen: "",
       resumen_corto:
         "El amor y la muerte se entrecruzan vibrantemente en este magistral tapiz cuyo centro es la construcción de una catedral gótica. La historia se inicia con el ahorcamiento público de un inocente y finaliza con la humillación de un rey.",
