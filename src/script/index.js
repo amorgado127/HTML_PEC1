@@ -34,17 +34,29 @@ window.onload = function () {
   };
   
   const categorias = document.getElementById("container");
+  var primero=true;
   data.categorias.forEach((dato) => {
+   if(primero){  // La primea categoria ya está en el HTML y sólo hay que actualizar sus datos
+     primero=false;
+     const imagen=categorias.getElementsByClassName("img");
+     imagen[0].src=dato.imagen;
+     imagen[0].alt="Categoría de libros "+dato.nombre;
+     const enlace=categorias.getElementsByClassName("a");
+     enlace[0]=dato.enlace;
+
+   }else{
+
     const div = document.createElement("div");
     const enlaceCategoria = document.createElement("a");
-    const imagen = document.createElement("img");
-    imagen.className = "img-categoria";
-    imagen.src = dato.imagen;
+    const imagenCategoria = document.createElement("img");
+    imagenCategoria.className = "img-categoria";
+    imagenCategoria.src = dato.imagen;
+    imagenCategoria.alt="Categoría de libros "+dato.nombre;
     enlaceCategoria.href = dato.enlace;
-    enlaceCategoria.appendChild(imagen);
-
+    enlaceCategoria.appendChild(imagenCategoria);
     div.appendChild(enlaceCategoria);
     div.className = "categoria";
     categorias.appendChild(div);
+   }
   });
 };
