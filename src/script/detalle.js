@@ -238,6 +238,11 @@ window.onload = function () {
     return categoria.id===libro[0].categoria;
   });
 
+  // Modifica los enlaces en el Breadcrumb Menú
+  const enlaceCategoria=document.getElementById("enlace-categoria");
+  enlaceCategoria.href="./categoria.html?categoria="+categoriaActual[0].id;
+  enlaceCategoria.innerText=categoriaActual[0].nombre;
+
   const tituloEnlaces=document.getElementById("titulo-enlaces-libros");
   tituloEnlaces.textContent="Otros libros en "+categoriaActual[0].nombre;
 
@@ -269,12 +274,13 @@ window.onload = function () {
         enlaceActual.href = "./detalle.html?isbn=" + libro.isbn;
         const imagenActual = divActual.getElementsByTagName("img")[0];
         imagenActual.src = libro.imagenPequeña;
-        imagenActual.alt = libro.titulo;
+        imagenActual.alt = "El título del libor es "+libro.titulo;
       } else {
         const div = document.createElement("div");
         const enlace = document.createElement("a");
         enlace.href = "./detalle.html?isbn=" + libro.isbn;
         const imagen = document.createElement("img");
+        imagen.alt = "El título del libor es "+libro.titulo;
         imagen.src = libro.imagenPequeña;
         imagen.className = "img-th";
         enlace.appendChild(imagen);

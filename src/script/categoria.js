@@ -253,7 +253,7 @@ window.onload = function () {
       const titulo = document.getElementsByClassName("titulo");
       titulo[0].textContent = libro.titulo;
       const autor = document.getElementsByClassName("autor");
-      titulo[0].textContent = libro.autor;
+      autor[0].textContent = libro.autor;
       const enlace = document.getElementsByClassName("enlace-detalle");
       enlace[0].href = "./detalle.html?isbn=" + libro.isbn;
       const imagen = document.getElementsByClassName("img-portada-th");
