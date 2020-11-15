@@ -1,5 +1,4 @@
-//import data from "./datos.js";
-constdata = {
+const data = {
   categorias: [
     {
       id: 0,
@@ -182,8 +181,8 @@ constdata = {
       isbn: 9788408154167,
       titulo: "El silecio de la ciudad blanca",
       autor: "Eva García Sáenz",
-      imagenPequeña: "./img/el_silencio_de_la_ciudad_blanca_th.jpg",
-      imagenGrande: "./img/el_silencio_de_la_ciudad_blanca_large.jpg",
+      imagenPequeña: "./img/silencio_ciudad_blanca_th.jpg",
+      imagenGrande: "./img/silencio_ciudad_blanca_large.jpg",
       resumen:
         "«Una ciudad aterrorizada por el regreso de unos asesinatos rituales. Un experto en perfiles criminales que esconde una tragedia. Un thriller hipnótico cuyas claves descansan en unos misteriosos restos arqueológicos» Tasio Ortiz de Zárate, el brillante arqueólogo condenado por los extraños asesinatos que aterrorizaron la tranquila ciudad de Vitoria hace dos décadas, está a punto de salir de prisión en su primer permiso cuando los crímenes se reanudan de nuevo: en la emblemática Catedral Vieja de Vitoria, una pareja de veinte años aparece desnuda y muerta por picaduras de abeja en la garganta. Poco después, otra pareja de veinticinco años es asesinada en la Casa del Cordón, un conocido edificio medieval.      El joven inspector Unai López de Ayala—alias Kraken—, experto en perfiles criminales, está obsesionado con prevenir los crímenes antes de que ocurran, una tragedia personal aún fresca no le permite encarar el caso como uno más. Sus métodos poco ortodoxos enervan a su jefa, Alba, la subcomisaria con la que mantiene una ambigua relación marcada por los crímenes…El tiempo corre en su contra y la amenaza acecha en cualquier rincón de la ciudad. ¿Quién será el siguiente?",
       resumen_corto:
@@ -228,16 +227,16 @@ window.onload = function () {
     parametros.length - parametros.indexOf("isbn=") + 5
   );
 
-  var libro = data.libros.filter((libro) => {
-    return libro.isbn === parseInt(isbn, 10);
+  var libro = data.libros.filter((book) => {
+    return book.isbn === parseInt(isbn, 10);
   });
   
-  var categoria=data.categorias.filter((categoria)=>{
+  var categoriaActual=data.categorias.filter((categoria)=>{
     return categoria.id===libro[0].categoria;
   });
 
   const tituloEnlaces=document.getElementById("titulo-enlaces-libros");
-  tituloEnlaces.textContent="Otros libros en "+categoria[0].nombre;
+  tituloEnlaces.textContent="Otros libros en "+categoriaActual[0].nombre;
 
   const imagenLibro = document.getElementById("portada");
   imagenLibro.src = libro[0].imagenGrande;
@@ -253,7 +252,11 @@ window.onload = function () {
 
   const enlacesLibros = document.getElementById("enlaces-libros-categoria");
   var primero = true;
-  data.libros.forEach((libro) => {
+
+  librosCategoriaActual=data.libros.filter(book=>{
+    return book.categoria===categoriaActual[0].id;
+  })
+  librosCategoriaActual.forEach((libro) => {
     if (libro.isbn !== parseInt(isbn, 10)) {
       // NO es el libro del que mostramos el detalle
       if (primero) {

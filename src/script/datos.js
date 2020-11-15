@@ -181,8 +181,8 @@ export default data = {
       isbn: 9788408154167,
       titulo: "El silecio de la ciudad blanca",
       autor: "Eva García Sáenz",
-      imagenPequeña: "./img/el_silencio_de_la_ciudad_blanca_th.jpg",
-      imagenGrande: "./img/el_silencio_de_la_ciudad_blanca_large.jpg",
+      imagenPequeña: "./img/silencio_ciudad_blanca_th.jpg",
+      imagenGrande: "./img/silencio_ciudad_blanca_large.jpg",
       resumen:
         "«Una ciudad aterrorizada por el regreso de unos asesinatos rituales. Un experto en perfiles criminales que esconde una tragedia. Un thriller hipnótico cuyas claves descansan en unos misteriosos restos arqueológicos» Tasio Ortiz de Zárate, el brillante arqueólogo condenado por los extraños asesinatos que aterrorizaron la tranquila ciudad de Vitoria hace dos décadas, está a punto de salir de prisión en su primer permiso cuando los crímenes se reanudan de nuevo: en la emblemática Catedral Vieja de Vitoria, una pareja de veinte años aparece desnuda y muerta por picaduras de abeja en la garganta. Poco después, otra pareja de veinticinco años es asesinada en la Casa del Cordón, un conocido edificio medieval.      El joven inspector Unai López de Ayala—alias Kraken—, experto en perfiles criminales, está obsesionado con prevenir los crímenes antes de que ocurran, una tragedia personal aún fresca no le permite encarar el caso como uno más. Sus métodos poco ortodoxos enervan a su jefa, Alba, la subcomisaria con la que mantiene una ambigua relación marcada por los crímenes…El tiempo corre en su contra y la amenaza acecha en cualquier rincón de la ciudad. ¿Quién será el siguiente?",
       resumen_corto:
