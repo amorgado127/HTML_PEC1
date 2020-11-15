@@ -242,12 +242,6 @@ ul.breadcrumb li a:hover {
   text-align: center;
 }
 
-/*********************************************************************/
-/*                                                                   */
-/*                 CSS fichero detalle.html                          */
-/*                                                                   */
-/*********************************************************************/
-
 .subrayado-largo {
   border-top: 1px solid var(--color_subrayado);
   width: 90%;
@@ -258,6 +252,18 @@ ul.breadcrumb li a:hover {
   margin-bottom: 20px;
   align-content: center;
 }
+
+
+
+
+
+
+/*********************************************************************/
+/*                                                                   */
+/*                 CSS fichero detalle.html                          */
+/*                                                                   */
+/*********************************************************************/
+
 
 .container-detalle {
   display: flex;
@@ -316,7 +322,7 @@ ul.breadcrumb li a:hover {
 
 @media screen and (max-width: 640px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .libro {
@@ -341,7 +347,18 @@ ul.breadcrumb li a:hover {
 /* Dispositivo tablet entre 640px y 1024px*/
 @media screen and (max-width: 1024px) and (min-width: 640px) {
   html {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  
+  .resumen-corto {
+    margin: auto 20px auto auto;
+    flex: 0 0 60%;
+  }
+  
+
+  .libro-portada-datos {
+    margin: auto;
+    flex: 0 0 40%;
   }
 }
 
